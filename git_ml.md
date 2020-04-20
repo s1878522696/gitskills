@@ -20,3 +20,19 @@ commit_id 版本ID (唯一标识号)
 * `git reset HEAD files` 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，
 想丢弃修改命令；
 * `git rm `  +`git commit `文件夹名字  删除一个文件夹
+
+## 远程仓库
+* `git remote add origin git@server-name:path/repo-name.git` 本地库要关联一个远程库的命令，
+{git@server-name:path/repo-name.git}仓库地址
+* `git push -u origin master` 第一次推送master分支的所有内容
+* `git push origin master` 后面可以用此命令推送
+* `git clone` +地址 克隆一个本地库
+* `ls` 输出当前文件内的文件名
+
+## 分支管理
+* `git branch` 查看分支
+* `git branch <name>` 创建分支
+* `git check <name>` 或者 `git switch <name>` 切换分支
+* `git checkout -b <name` 或者 `git switch -c <name>` 创建+切换分支
+* `git merge <name>` 合并某分支到当前分支
+* `git branch -d <name>` 删除分支
